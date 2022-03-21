@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 100%;
+    height: 100vh;display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 70px;
+    height: 70px;
+}
+article {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.invoice {
+    width: 100%;
+    height: 30vh;
+    background-color: grey;
+    padding: 30px;
+}
+.company {
+    display: flex;
+    gap: 10px;
+}
+.invoice >table {
+    width: 70%;
+    margin-top: 10px;
+}
+.content {
+    width: 100%;
+    height: 65vh;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+.content >table {
+    width: 70%;
+    vertical-align: middle;
+    text-align: left;
+}
+.content >table >tr {
+   margin-top: 10px ;
+   border-bottom: 1px solid black;
+}
+tr {
+    margin: 20px 0;
+}
+button {
+    width: 70%;
+}
+@media only screen and (max-width:425px) {
+    main {
+        justify-content: start;
+        align-items: flex-start;
+    }
+    article {
+        width: 100%;
+    }
+    .invoice {
+        flex-direction: column;
+    }
+    .company {
+        flex-direction: column;
+    }
+    .invoice >table {
+        display: none;
+    }
+    .content > table {
+        width: 100%;
+    }
+}
+
+
+
+
